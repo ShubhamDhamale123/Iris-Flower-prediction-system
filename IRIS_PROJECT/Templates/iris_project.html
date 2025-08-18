@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body {
+        /* background-image: url(flower3); */
+        background-color: rgb(3, 2, 2);
+        background-repeat: no-repeat;
+        background-size: initial;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .navbar {
+        margin-top: -0.2cm;
+        height: 1cm;
+        border: 4px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        border-style: ridge;
+
+    }
+
+
+    ul {
+        margin-top: 0.2cm;
+    }
+
+    .navbar li {
+        float: left;
+        list-style: none;
+        padding-right: 20px;
+        font-size: large;
+
+    }
+
+    .navbar li a {
+
+        text-decoration: none;
+        color: aliceblue;
+        font-style: normal;
+        font-weight: bold;
+
+    }
+
+    .navbar li a:hover {
+        background-color: rgb(21, 20, 19);
+        border-radius: 4px;
+
+        border-style: ridge;
+        border-color: rgb(251, 251, 251);
+    }
+
+    .search {
+        border: 7px;
+        float: right;
+        margin-top: 0.09cm;
+        padding-top: 0px 29px;
+        margin-right: 1cm;
+        display: flex;
+    }
+
+    .search input {
+        border-radius: 6px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-top: -0.02cm;
+
+    }
+
+    h1 {
+        justify-items: center;
+        text-align: center;
+        color: rgb(247, 247, 247);
+        font-size: xx-large;
+        margin-top: 0.5cm;
+        transition-duration: 2s;
+    }
+
+    h1:hover {
+        color: chocolate;
+    }
+
+
+
+    .list li {
+        margin-top: -0.5cm;
+        display: flex;
+        text-align: center;
+        color: black;
+        border: 4px solid;
+        border-width: 0.4cm;
+        border-radius: 14px;
+        border-color: rgb(229, 141, 25);
+        border-style: groove;
+        justify-content: center;
+        font-weight: bolder;
+        margin-right: 2cm;
+        width: 10cm;
+        height: max-content;
+        background-color: cadetblue;
+        transition-property: background-color;
+        transition-duration: 2s;
+    }
+
+    .list {
+        display: flex;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: larger;
+        height: 2cm;
+        padding-top: 1cm;
+        /* border: 7px solid wheat; */
+        margin-top: -0.5cm;
+        font-size: larger;
+
+        justify-content: center;
+
+
+        text-align: center;
+
+    }
+
+
+
+    .list li:hover {
+        background-color: rgb(196, 36, 84);
+    }
+
+    .input {
+        display: flex;
+        justify-content: center;
+        color: azure;
+        text-align: center;
+        size-adjust: initial;
+        margin-top: 6cm;
+        background-size: contain;
+    }
+
+
+    #name {
+        display: flex;
+        text-align: center;
+        font-weight: bolder;
+        background-color: rgb(250, 250, 250);
+
+        color: rgb(23, 21, 21);
+        border: 4px solid rgb(224, 143, 56);
+        border-radius: 15px;
+        position: relative;
+        border-style: groove;
+        font-size: xx-large;
+        margin-bottom: 0.3cm;
+    }
+
+    .enter {
+        font-size: 1cm;
+        font-weight: bolder;
+    }
+
+    .space {
+        justify-content: center;
+        margin-top: 0.3cm;
+        margin-left: 4cm;
+    }
+
+    #gmail {
+        color: rgb(0, 0, 0);
+        background-color: azure;
+        font-size: x-large;
+        font-weight: bold;
+        border: 4px solid cyan;
+        border-radius: 15px;
+        padding-left: 0.5cm;
+        margin-top: 0.2cm;
+        transition-duration: 1.5s;
+    }
+
+    #About {
+        color: rgb(0, 0, 0);
+        background-color: azure;
+        font-size: x-large;
+        font-weight: bold;
+        border: 7px solid cyan;
+        border-style: ridge;
+        border-radius: 15px;
+        padding-left: 0.5cm;
+        margin-top: -0.3cm;
+        transition-duration: 1.5s;
+    }
+
+    #gmail:hover {
+        background-color: aqua;
+    }
+
+    #about {
+        color: azure;
+        display: flex;
+        padding-left: 0.3cm;
+        margin-top: -0.2cm;
+        font-size: 0.8cm;
+        font-weight: bold;
+        justify-content: center;
+        transition-duration: 2s;
+    }
+
+    #about:hover {
+        color: rgb(98, 250, 255);
+
+    }
+
+    #About:hover {
+        background-color: aqua;
+    }
+
+    #flower {
+        justify-content: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: azure;
+        font-size: x-large;
+        font-weight: bold;
+        border: 7px solid cyan;
+        border-style: ridge;
+        border-radius: 15px;
+        padding-left: 0.5cm;
+        margin-top: 0.2cm;
+        transition-duration: 1.5s;
+    }
+
+    #flower:hover {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="" target="_parent">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#iris">Iris-Flower</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>
+            !! Iris flower prediction system !!
+        </h1>
+
+        <ol class="list">
+            <li>1) Iris Setosa Classification :
+                <br>
+
+                <head class="size"> Kingdom: Plantae <br>
+                    Clade: Tracheophytes <br>
+                    Clade: Angiosperms <br>
+                    Clade: Monocots <br>
+                    Order: Asparagales <br>
+                    Family: Iridaceae <br>
+                    Genus: Iris <br>
+                    Subgenus: Iris subg. Limniris <br>
+                    Section: Iris sect. Limniris <br>
+                    Series: Iris ser. Tripetalae <br>
+                    Species: I. setosa</head><br>
+
+            </li>
+            <li>2) Iris Versicolor Classification :<br>
+
+                <head class="size"> Kingdom: Plantae <br>
+                    Clade: Tracheophytes <br>
+                    Clade: Angiosperms <br>
+                    Clade: Monocots <br>
+                    Order: Asparagales <br>
+                    Family: Iridaceae <br>
+                    Genus: Iris <br>
+                    Subgenus: Iris subg. Limniris <br>
+                    Section: Iris sect. Limniris <br>
+                    Series: Iris ser. Laevigatae <br>
+                    Species: I. versicolor</head>
+            </li>
+            <li>3) Iris virginica Classification :
+                <br>
+
+                <head class="size">Kingdom: Plantae <br>
+                    Clade: Tracheophytes <br>
+                    Clade: Angiosperms <br>
+                    Clade: Monocots <br>
+                    Order: Asparagales <br>
+                    Family: Iridaceae <br>
+                    Genus: Iris <br>
+                    Subgenus: Iris subg. Limniris <br>
+                    Section: Iris sect. Limniris <br>
+                    Series: Iris ser. Laevigatae <br>
+                    Species: I. virginica</head>
+            </li>
+        </ol>
+        </nav>
+    </section>
+
+    <div class="input">
+        <form method="post" action="/prediction">
+            <label class="enter" for="name">Enter Sepal Length :</label> <br>
+            <input type="text" id="name" name="name" placeholder="Sepal Length"><br>
+
+            <label class="enter" for="name1">Enter Sepal Width :</label> <br>
+            <input type="text" id="name" name="name1" placeholder="Sepal Width"><br>
+
+            <label class="enter" for="name2">Enter Petal Length :</label> <br>
+            <input type="text" id="name" name="name2" placeholder="Petal Length"><br>
+
+            <label class="enter" for="name3">Enter Petal Width :</label> <br>
+            <input type="text" id="name" name="name3" placeholder="Petal Width"><br>
+
+            <button class="space" id="name" type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <hr>
+
+    <p class="about">
+        <li id="about">About :</li>
+    </p>
+    <p id="About">It contains measurements of sepal and petal length
+        and width for 150 Iris flowers, divided into three species: Iris setosa, Iris versicolor, and Iris virginica.
+        and predict the which type of species.</p>
+    <hr>
+    <hr>
+    <p id="service">
+        <li id="about">Services:</li>
+    </p>
+    <p id="About">We are analysis the any type of data,learn it and create model in machine learning algorithm
+        that throught predict the system output. <br>
+        <br>
+        Algorithms : <br>
+        1)Linear Regression Algorithm <br>
+        2)Logistic Regression Algorithm <br>
+        3)K-Nearest Neighibouer Algorithm <br>
+        3.1)KNN Classifier Algorithm <br>
+        3.2)KNNR Cegressor Algorithm <br>
+        4)Decision Tree Algorithm <br>
+        5)Random Forest Algorithm <br>
+        6)AdaBoost Algorithm <br>
+        7)Gradient-Boost Algorithm <br>
+        8)XGBoost Algorithm <br>
+        9)Support Vector Machine Algorithm <br>
+        10)Naive Bayes Classifier Algorithm <br>
+    </p>
+    <hr>
+    <hr>
+    <p id="contact">
+        <li id="about">Contact US:</li>
+    </p>
+    <p id="gmail">gmail : dhamaleshubham08@gmail.com <br>
+        Mobile No : 9145098040</p>
+    <hr>
+    <hr>
+    <p id="iris">
+        <li id="about">Iris-Flower:</li>
+    </p>
+    <P id="flower"><img src="dataset-cover.png" alt="flowers"></P>
+
+
+    <!-- sepal length (cm)',
+ 'sepal width (cm)',
+ 'petal length (cm)',
+ 'petal width (cm)' -->
